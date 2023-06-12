@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CourseTrainer"
+        tools:targetApi="31">
+        <activity android:name=".activity.create_course_trainer"
+            android:label="Create Course"></activity>
+        <activity android:name=".activity.course_calendar_view"
+            android:label="Calendar View"></activity>
+        <activity android:name=".activity.course_delete_trainer"
+            android:label="Delete Course"></activity>
+        <activity android:name=".activity.course_trainer_details"
+            android:label="Course Details"></activity>
+        <activity android:name=".activity.update_course_trainer"
+            android:label="Update Course"></activity>
+        <activity android:name=".activity.course_schedule_trainer_get"
+            android:label="Course Schedule List"></activity>
+        <activity
+            android:name=".activity.course_trainer_get"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
